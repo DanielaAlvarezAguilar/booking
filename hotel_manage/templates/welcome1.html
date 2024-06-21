@@ -1,0 +1,51 @@
+{% extends "base1.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block head %}
+  <!-- Estilos adicionales para el carrusel -->
+  <style>
+    
+  </style>
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="row" align="center">
+  <div class="col-sm">
+  <div class="card" style="width: 24rem;">
+    <img class="card-img-top" style="height: 15rem;" src="{{ url_for('static', filename='fotos/hotel-melia-habana.jpg') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HOTEL MELIA HABANA</h5>
+      <p class="card-text">Situado entre la Quinta Avenida y el mar, Meliá Habana es tu hotel ideal si viajas por negocios o buscas descubrir la ciudad desde sus encantos más actuales.</p>
+      <a href="{{ url_for('reserve_hotel') }}" class="btn btn-primary">RESERVAR</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm">
+  <div class="card" style="width: 24rem;">
+    <img class="card-img-top" style="height: 15rem;" src="{{ url_for('static', filename='fotos/packard-hotel.jpg') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HOTEL PACKARD</h5>
+      <p class="card-text">Hotel 4 estrellas, ubicado en la zona residencial de Miramar. De fácil acceso a lugares de interés como la Habana Vieja, el Club Habana y el Acuario Nacional de Cuba.</p>
+      
+      <a href="{{ url_for('reserve_hotel') }}" class="btn btn-primary">RESERVAR</a>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm">
+  <div class="card" style="width: 24rem;" >
+    <img class="card-img-top" style="height: 15rem;" src="{{ url_for('static', filename='fotos/memories-miramar-hotel.jpg') }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">HOTEL MEMORIES MIRAMAR</h5>
+      <p class="card-text">Panorama es un hotel referente en la capital cubana por su impactante diseño arquitectónico y por su ubicación preferencial delante del mar en la zona residencial de Miramar</p>
+      
+      <a href="{{ url_for('reserve_hotel') }}" class="btn btn-primary">RESERVAR</a>
+    </div>
+  </div>
+  </div>
+</div>
+<!-- Script para inicializar el carousel -->
+<script>
+</script>
+{% endblock %}
